@@ -19,7 +19,7 @@ def chat():
 
         #Retrieve JSON data from GitHub with authentication
         headers = {"Authorization":f"token {github_token}"}
-        response = requests.get(github_url,headers=header)
+        response = requests.get(github_url,headers=headers)
 
         if response.status_code == 200:
             json_data = response.json()
